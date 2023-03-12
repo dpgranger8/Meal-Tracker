@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		7E8406B829BA3CC400B3AF63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8406B729BA3CC400B3AF63 /* AppDelegate.swift */; };
 		7E8406BA29BA3CC400B3AF63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8406B929BA3CC400B3AF63 /* SceneDelegate.swift */; };
-		7E8406BC29BA3CC400B3AF63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8406BB29BA3CC400B3AF63 /* ViewController.swift */; };
 		7E8406BF29BA3CC400B3AF63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E8406BD29BA3CC400B3AF63 /* Main.storyboard */; };
 		7E8406C129BA3CC500B3AF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E8406C029BA3CC500B3AF63 /* Assets.xcassets */; };
 		7E8406C429BA3CC500B3AF63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E8406C229BA3CC500B3AF63 /* LaunchScreen.storyboard */; };
 		7E8406CF29BA3CC500B3AF63 /* Meal_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8406CE29BA3CC500B3AF63 /* Meal_TrackerTests.swift */; };
 		7E8406D929BA3CC500B3AF63 /* Meal_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8406D829BA3CC500B3AF63 /* Meal_TrackerUITests.swift */; };
 		7E8406DB29BA3CC500B3AF63 /* Meal_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8406DA29BA3CC500B3AF63 /* Meal_TrackerUITestsLaunchTests.swift */; };
+		7E8406E829BA3EAC00B3AF63 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8406E729BA3EAC00B3AF63 /* FoodTableViewController.swift */; };
+		7E8406EA29BA3EDA00B3AF63 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8406E929BA3EDA00B3AF63 /* Meal.swift */; };
+		7E8406EC29BA3EE500B3AF63 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8406EB29BA3EE500B3AF63 /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		7E8406B429BA3CC400B3AF63 /* Meal Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meal Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8406B729BA3CC400B3AF63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E8406B929BA3CC400B3AF63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7E8406BB29BA3CC400B3AF63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E8406BE29BA3CC400B3AF63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E8406C029BA3CC500B3AF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E8406C329BA3CC500B3AF63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		7E8406D429BA3CC500B3AF63 /* Meal TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meal TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8406D829BA3CC500B3AF63 /* Meal_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal_TrackerUITests.swift; sourceTree = "<group>"; };
 		7E8406DA29BA3CC500B3AF63 /* Meal_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7E8406E729BA3EAC00B3AF63 /* FoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewController.swift; sourceTree = "<group>"; };
+		7E8406E929BA3EDA00B3AF63 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		7E8406EB29BA3EE500B3AF63 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		7E8406AB29BA3CC400B3AF63 = {
 			isa = PBXGroup;
 			children = (
+				7E8406ED29BA3F0C00B3AF63 /* Models */,
 				7E8406B629BA3CC400B3AF63 /* Meal Tracker */,
 				7E8406CD29BA3CC500B3AF63 /* Meal TrackerTests */,
 				7E8406D729BA3CC500B3AF63 /* Meal TrackerUITests */,
@@ -101,8 +106,8 @@
 			children = (
 				7E8406B729BA3CC400B3AF63 /* AppDelegate.swift */,
 				7E8406B929BA3CC400B3AF63 /* SceneDelegate.swift */,
-				7E8406BB29BA3CC400B3AF63 /* ViewController.swift */,
 				7E8406BD29BA3CC400B3AF63 /* Main.storyboard */,
+				7E8406E729BA3EAC00B3AF63 /* FoodTableViewController.swift */,
 				7E8406C029BA3CC500B3AF63 /* Assets.xcassets */,
 				7E8406C229BA3CC500B3AF63 /* LaunchScreen.storyboard */,
 				7E8406C529BA3CC500B3AF63 /* Info.plist */,
@@ -125,6 +130,15 @@
 				7E8406DA29BA3CC500B3AF63 /* Meal_TrackerUITestsLaunchTests.swift */,
 			);
 			path = "Meal TrackerUITests";
+			sourceTree = "<group>";
+		};
+		7E8406ED29BA3F0C00B3AF63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E8406E929BA3EDA00B3AF63 /* Meal.swift */,
+				7E8406EB29BA3EE500B3AF63 /* Food.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E8406BC29BA3CC400B3AF63 /* ViewController.swift in Sources */,
+				7E8406EA29BA3EDA00B3AF63 /* Meal.swift in Sources */,
 				7E8406B829BA3CC400B3AF63 /* AppDelegate.swift in Sources */,
+				7E8406EC29BA3EE500B3AF63 /* Food.swift in Sources */,
+				7E8406E829BA3EAC00B3AF63 /* FoodTableViewController.swift in Sources */,
 				7E8406BA29BA3CC400B3AF63 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
